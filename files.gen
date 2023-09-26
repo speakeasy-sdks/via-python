@@ -11,7 +11,7 @@ src/via/utils/utils.py
 src/via/models/operations/get_users.py
 src/via/models/operations/__init__.py
 src/via/models/errors/__init__.py
-docs/sdks/via/README.md
 USAGE.md
 docs/models/operations/getusersresponse.md
+docs/sdks/via/README.md
 .gitattributes
