@@ -26,6 +26,7 @@ res = s.via.get_users()
 
 if res.get_users_200_application_json_strings is not None:
     # handle response
+    pass
 ```
 
 
