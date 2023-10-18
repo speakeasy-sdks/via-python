@@ -2,7 +2,7 @@
 
 import requests as requests_http
 from .sdkconfiguration import SDKConfiguration
-from typing import Optional
+from typing import Dict, List, Optional
 from via import utils
 from via.models import errors, operations
 
@@ -14,7 +14,7 @@ class Via:
     def __init__(self,
                  server_idx: int = None,
                  server_url: str = None,
-                 url_params: dict[str, str] = None,
+                 url_params: Dict[str, str] = None,
                  client: requests_http.Session = None,
                  retry_config: utils.RetryConfig = None
                  ) -> None:
@@ -25,7 +25,7 @@ class Via:
         :param server_url: The server URL to use for all operations
         :type server_url: str
         :param url_params: Parameters to optionally template the server URL with
-        :type url_params: dict[str, str]
+        :type url_params: Dict[str, str]
         :param client: The requests.Session HTTP client to use for all operations
         :type client: requests_http.Session
         :param retry_config: The utils.RetryConfig to use globally
@@ -66,7 +66,7 @@ class Via:
         
         if http_res.status_code == 200:
             if utils.match_content_type(content_type, 'application/json'):
-                out = utils.unmarshal_json(http_res.text, Optional[list[str]])
+                out = utils.unmarshal_json(http_res.text, Optional[List[str]])
                 res.get_users_200_application_json_strings = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
