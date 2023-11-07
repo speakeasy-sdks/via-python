@@ -4,13 +4,12 @@
 ```python
 import via
 
-
 s = via.Via()
 
 
-res = s.via.get_users()
+res = s.get_users()
 
-if res.get_users_200_application_json_strings is not None:
+if res.strings is not None:
     # handle response
     pass
 ```
