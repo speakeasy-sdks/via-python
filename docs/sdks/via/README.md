@@ -32,4 +32,8 @@ if res.strings is not None:
 ### Response
 
 **[operations.GetUsersResponse](../../models/operations/getusersresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
