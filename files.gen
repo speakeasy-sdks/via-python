@@ -7,6 +7,7 @@ src/via/utils/__init__.py
 src/via/utils/retries.py
 src/via/utils/utils.py
 src/via/models/errors/sdkerror.py
+tests/helpers.py
 src/via/models/operations/get_users.py
 src/via/models/__init__.py
 src/via/models/errors/__init__.py
