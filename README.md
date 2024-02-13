@@ -60,6 +60,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import via
+from via.models import errors
 
 s = via.Via()
 
@@ -68,7 +69,7 @@ res = None
 try:
     res = s.get_users()
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.strings is not None:
