@@ -4,15 +4,15 @@ management:
   docChecksum: 91bc040283e6b1febc5304391c2c1cc2
   docVersion: 0.1.9
   speakeasyVersion: internal
-  generationVersion: 2.253.0
-  releaseVersion: 0.10.0
-  configChecksum: a5d8daf968d7100ceb6cf68eb011ae8d
+  generationVersion: 2.275.4
+  releaseVersion: 0.11.0
+  configChecksum: ae17455e7f3b1e16fb4bd228ef3672cf
   repoURL: https://github.com/speakeasy-sdks/via-python.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/via-python.git
 features:
   python:
-    core: 4.4.5
+    core: 4.5.0
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/via/sdkconfiguration.py
@@ -33,3 +33,6 @@ generatedFiles:
   - docs/sdks/via/README.md
   - USAGE.md
   - .gitattributes
+  - src/via/_hooks/sdkhooks.py
+  - src/via/_hooks/types.py
+  - src/via/_hooks/__init__.py
