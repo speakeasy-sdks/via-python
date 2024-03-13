@@ -3,17 +3,17 @@ id: 5046481e-10d4-4f94-b98f-9a6ca47d0c23
 management:
   docChecksum: 91bc040283e6b1febc5304391c2c1cc2
   docVersion: 0.1.9
-  speakeasyVersion: 1.204.1
-  generationVersion: 2.279.1
-  releaseVersion: 0.12.0
-  configChecksum: e1f42e5b5dcdd64e818cf0a16f4e184d
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 0.12.1
+  configChecksum: 50b96f977f67cc47f7dfc3ca92433feb
   repoURL: https://github.com/speakeasy-sdks/via-python.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/via-python.git
 features:
   python:
     core: 4.5.1
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
   - src/via/sdkconfiguration.py
